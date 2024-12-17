@@ -63,14 +63,13 @@
 /* Si vous voulez creer des nouvelles classe sans quon ai des conflits, commencer tjrs pas la premiere lettre de votre prenom, par exemple pour Nordine ce sera <div class="N_navbar"></div> "N__" pour nordine "M___" pour miguel, ainsi de suite. */
 /* ---------------------Agim------------------------ */
 @font-face {
-    font-family: maFont;
-    src: url(fonts/agim/Voltaire-Frangela.ttf);
+    font-family: fontgta;
+    src: url(fonts/agim/PricedownBl.otf);
 }
 
 .A__body {
     padding: 0;
     margin: 0;
-    font-family: mafont;
 }
 
 /* Page 1 (agim) */
@@ -1115,16 +1114,21 @@ html {
 
 .A__gta__nav-h1 {
     position: absolute;
-    bottom: 30%;
-    left: 33%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    bottom: 15%;
+    left: 58%;
     font-size: 5rem;
-    color: wheat;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 50% 50%;
     padding: 3%;
-    animation: arrow 2s forwards 4s;
+    font-family: fontgta;
+    color: rgb(230, 230, 230);
+    font-weight: bolder;
     opacity: 0;
+    animation: arrow 1s steps(30, end) forwards 2.5s;
+    font-size: 2rem;
 }
+
 .A__gta__nav-h1::after {
     display: block;
     content: "➜";
@@ -1133,14 +1137,37 @@ html {
     bottom: -0%;
     rotate: 45deg;
     font-size: 3rem;
-    
+    opacity: 0;
+    animation: opa 1s forwards 3.5s;
 }
+
+@keyframes opa {
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes arrow {
-    0%{
+    0% {
+        width: 0;
         opacity: 0;
     }
-    100%{
+
+    100% {
+        width: 19%;
         opacity: 1;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
     }
 }
 
@@ -1149,46 +1176,63 @@ html {
     bottom: 0;
     right: 0;
     opacity: 0;
-    animation: bottomTrev 1.5s ease-out 1.5s forwards ;
+    animation: bottomTrev 1.5s ease-out 1s forwards;
 }
+
 @keyframes bottomTrev {
-    0%{
+    0% {
         transform: translateY(20rem);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
+
     }
 }
-.A__gta__scrollArrows{
-    rotate: 180deg;
+
+.A__gta__scrollArrows {
+    rotate: 90deg;
     position: absolute;
     bottom: 0;
     transform: translate(-50%);
     left: 50%;
+    text-align: center;
+    align-content: center;
 }
 
-.allArrows{
+
+.allArrows {
     color: white;
     text-decoration: none;
     font-size: 3rem;
 }
 
-#A__gta__main_one, #A__gta__main_two, #A__gta__main_three, #A__gta__main_four #A__gta__main_five, #A__gta__main_six{
-    position: relative;
+.allArrows:hover {
+    color: #ff0000;
+    font-weight: bold;
+
 }
 
-.A__gta__main_six{
-    background-color: gray;
+#A__gta__main_one,
+#A__gta__main_two,
+#A__gta__main_three,
+#A__gta__main_four,
+#A__gta__main_five,
+#A__gta__main_six {
+    position: relative;
+
 }
 
 .A__gta__Section {
     scroll-snap-align: start;
     height: 100vh;
+    width: 80%;
 }
 
 .A__gta__firstSection-trevor {
+    width: 25%;
     display: block;
 }
 
@@ -1197,9 +1241,25 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(4deg, rgba(0, 0, 0, 0.719) 24%, rgba(0, 0, 0, 0.963) 93%);
+    align-items: center;
+
 
 }
+
+.firstSection {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(4deg, rgba(0, 0, 0, 0.825) 24%, rgba(236, 236, 236, 0.314) 93%);
+}
+
+.A__gta__main-grooveStreet {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: linear-gradient(4deg, rgba(0, 0, 0, 0.825) 24%, rgba(171, 32, 32, 0.998) 93%);
+}
+
 
 .A__gta___footer {
     height: 100vh;
