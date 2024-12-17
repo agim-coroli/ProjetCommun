@@ -65,6 +65,7 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  margin: 20% auto;
 }
 
 .o__buttonContainer {
@@ -72,7 +73,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-.button {
+.o__button{
   width: 60px;
 }
 

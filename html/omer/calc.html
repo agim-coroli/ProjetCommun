@@ -1,43 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css">
     <title>Calculator</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="o__bigContainer">
-      <div class="o__resContainer">
-        <h1 class="o__resFild">
-          <input type="text" name="" id="" />
-        </h1>
-      </div>
-      <div class="o__buttonContainer">
-        <button class="button" id="button-ac">AC</button>
-        <button class="button" id="button-de">DE</button>
-        <button class="button" id="button-dot">.</button>
-        <button class="button" id="button-slash">/</button>
-        <button class="button" id="button-7">7</button>
-        <button class="button" id="button-8">8</button>
-        <button class="button" id="button-9">9</button>
-        <button class="button" id="button-x">x</button>
-        <button class="button" id="button-4">4</button>
-        <button class="button" id="button-5">5</button>
-        <button class="button" id="button-6">6</button>
-        <button class="button" id="button-minus">-</button>
-        <button class="button" id="button-1">1</button>
-        <button class="button" id="button-2">2</button>
-        <button class="button" id="button-3">3</button>
-        <button class="button" id="button-plus">+</button>
-        <button class="button" id="button-00">00</button>
-        <button class="button" id="button-0">0</button>
-        <button class="button" id="button-egal">=</button>
-      </div>
+        <div class="o__resContainer">
+            <h1 class="o__resFild"> </h1>
+        </div>
+        <div class="o__buttonContainer">
+            <button class="o__button" id="o__button-ac">AC</button>
+            <button class="o__button" id="o__button-de">DE</button>
+            <button class="o__button" id="o__button-dot">.</button>
+            <button class="o__button" id="o__button-slash">/</button>
+            <button class="o__button" id="o__button-7">7</button>
+            <button class="o__button" id="o__button-8">8</button>
+            <button class="o__button" id="o__button-9">9</button>
+            <button class="o__button" id="o__button-x">x</button>
+            <button class="o__button" id="o__button-4">4</button>
+            <button class="o__button" id="o__button-5">5</button>
+            <button class="o__button" id="o__button-6">6</button>
+            <button class="o__button" id="o__button-minus">-</button>
+            <button class="o__button" id="o__button-1">1</button>
+            <button class="o__button" id="o__button-2">2</button>
+            <button class="o__button" id="o__button-3">3</button>
+            <button class="o__button" id="o__button-plus">+</button>
+            <button class="o__button" id="o__button-00">00</button>
+            <button class="o__button" id="o__button-0">0</button>
+            <button class="o__button" id="o__button-egal">=</button>
+        </div>
     </div>
 
-    <script> 
-    let buttons = document.querySelectorAll('.button');
+    <script>
+        let buttons = document.querySelectorAll('.o__button');
+        let display = document.querySelector('.o__resFild');
+        let AC = document.querySelector("#o__button-ac");
+        let DE = document.querySelector("#o__button-de");
+        let dot = document.querySelector("#o__button-dot");
+        let slash = document.querySelector("#o__button-slash");
+        let x = document.querySelector("#o__button-x");
+        let minus = document.querySelector("#o__button-minus");
+        let plus = document.querySelector("#o__button-plus");
+        let zero = document.querySelector("#o__button-0");
+        let zeroZero = document.querySelector("#o__button-00");
+        let egal = document.querySelector("#o__button-egal");
+        let one = document.querySelector("#o__button-1");
+        let two = document.querySelector("#o__button-2");
+        let three = document.querySelector("#o__button-3");
+        let four = document.querySelector("#o__button-4");
+        let five = document.querySelector("#o__button-5");
+        let six = document.querySelector("#o__button-6");
+        let seven = document.querySelector("#o__button-7");
+        let eight = document.querySelector("#o__button-8");
+        let nine = document.querySelector("#o__button-9");
+        let res = 100;
+        display.textContent = 0;
+
+        DE.addEventListener("click", obrisi);
+        one.addEventListener("click", jedan);
+        two.addEventListener("click", dva);
+        three.addEventListener("click", tri);
+        four.addEventListener("click", cetiri);
+        five.addEventListener("click", pet);
+        six.addEventListener("click", sest);
+        seven.addEventListener("click", sedam);
+        eight.addEventListener("click", osam);
+        nine.addEventListener("click", devet);
+        zero.addEventListener("click", nula);
+       // zeroZero.addEventListener("click", nulaDva);
+        egal.addEventListener("click", jednako);
+
+        plus.addEventListener("click" , puta);
+
+        function puta(){
+            display.textContent += "+";
+        }
+
+
+
+        function jednako() {
+            display.textContent = res;
+
+        }
+
+        function obrisi() {
+            display.textContent = 0;
+        }
+
+
+
+        function nula() {
+            
+            if (display.textContent == 0) {
+                display.textContent  += 0;
+            }
+            else {
+                display.textContent += 0;
+            }
+        }
+
+        function jedan() {
+            if (display.textContent == 0) {
+                display.textContent = 1;
+            }
+            else {
+                display.textContent += 1;
+            }
+        }
+        function dva() {
+            if (display.textContent == 0) {
+                display.textContent = 2;
+            }
+            else {
+                display.textContent += 2;
+            }
+        }
+        function tri() {
+            if (display.textContent == 0) {
+                display.textContent = 3;
+
+            } else {
+                display.textContent += 3;
+            }
+        }
+        function cetiri() {
+            if (display.textContent == 0) {
+                display.textContent = 4;
+            } else {
+                display.textContent += 4;
+            }
+        }
+
+        function pet() {
+            if (display.textContent == 0) {
+                display.textContent = 5;
+            } else {
+                display.textContent += 5;
+            }
+        }
+
+        function sest() {
+            if (display.textContent == 0) {
+                display.textContent = 6;
+            } else {
+                display.textContent += 6;
+            }
+        }
+
+        function sedam() {
+            if (display.textContent == 0) {
+                display.textContent = 7;
+            } else {
+                display.textContent += 7;
+            }
+        }
+
+        function osam() {
+            if (display.textContent == 0) {
+                display.textContent = 8;
+            } else {
+                display.textContent += 8;
+            }
+        }
+
+        function devet() {
+            if (display.textContent == 0) {
+                display.textContent = 9;
+            } else {
+                display.textContent += 9;
+            }
+        }
+
+
+
+
+
+
     </script>
-  </body>
+</body>
+
 </html>
