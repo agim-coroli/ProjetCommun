@@ -1903,6 +1903,15 @@ html {
   }
 }
 
+.A__cards_back{
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  width: 30%;
+}
+
 .A__inputs__icons{
   color: white;
   &:hover{
@@ -1953,8 +1962,95 @@ h1,
 }
 
 
+/* matrix  */
+
+.A__body__matrix{
+  background-color: black;
+  color: #45E169;
+  overflow: hidden;
+  margin: 1%;
+}
+.A__matrix-line{
+  display: flex;
+  flex-direction: column;
+  animation: scroll 4s linear infinite; 
+}
+
+.A__matrix-line:nth-child(1){
+  translate: 0 -84rem;
+  animation-delay:7s ;
+}
+.A__matrix-line:nth-child(2){
+  translate: 0 -38rem;
+  animation-delay:5s ;
+}
+.A__matrix-line:nth-child(3){
+  translate: 0 -115rem;
+  animation-delay:1s ;
+}
+.A__matrix-line:nth-child(4){
+  translate: 0 -65rem;
+  animation-delay: 9s;
+}
+
+.A__matrix-line:last-child{
+  translate: 0 -29rem;
+  animation-delay:13s ;
+}
+
+.A__matrix-line span:last-child{
+  color: white;
+}
 
 
+.A__matrix-container{
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 50px;
+}
 
+@keyframes scroll {
+  100% {
+      transform: translateY(400vh); 
+  }
+}
+
+.A__matrix_inputs{
+  background-color: #555555;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 5.5rem;
+  border-radius: 15px;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 -1px 20px 1px #45E169;
+
+}
+
+.A__matrix_inp{
+  height: 1.8rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.A__matrix_btn{
+  height: 1.5rem;
+  width: 25%;
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+  align-content: center;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+}
 
 /* ---------------------Agim------------------------ */
