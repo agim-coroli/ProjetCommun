@@ -47,9 +47,44 @@
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Si vous voulez creer des nouvelles classe sans quon ai des conflits, commencer tjrs pas la premiere lettre de votre prenom, par exemple pour Nordine ce sera <div class="N_navbar"></div> "N__" pour nordine "M__" pour miguel, ainsi de suite. */
-/* ---------------------Miguel------------------------ */
+/* ---------------------Massine------------------------ */
 
-/* ---------------------Miguel------------------------ */
+* {
+  overflow: auto !important;
+}
+
+
+.m_body{
+  background-color: #1C2942;
+  margin: 0;
+}
+
+.m_head{
+  background-image: url("html/Massine/images/massine/chip-7732459_1280.webp");
+  background-size: contain;
+  margin: 0;
+}
+
+.m_titre{
+  font-family: "Zen Dots", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.m_text{
+  font-family: Zen Dots, sans-serif;
+  width: 80%;
+  padding-left: 10%;
+  color: white;
+
+}
+
+.m_liste{
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+}
+
+/* ---------------------Massine------------------------ */
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
