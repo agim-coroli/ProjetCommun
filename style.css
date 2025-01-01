@@ -65,6 +65,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
+  padding-top: 3%;
 }
 
 .m_titre{
@@ -81,9 +82,30 @@
 
 }
 
-.m_liste{
+.m_liste, .m_navbar{
   font-family: "Zen Dots", sans-serif;
   color: white;
+}
+
+.m_register{
+  background-color: white;
+  color: #1C2942 ;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+.m_span{
+  display: flex;
+  gap: 1em;
+}
+
+.m_navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 10%;
 }
 
 .m_main{
@@ -91,14 +113,14 @@
   margin: 0 auto;
 }
 
-.m_hacker{
+.m_hacker, .m_chain, .m_brain{
   width: 45%;
   height: auto;
   border-radius: 20px;
   box-shadow: ;
 }
 
-.m_cyber{
+.m_contain{
   width: 45%;
   height: auto;
 }
