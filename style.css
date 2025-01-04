@@ -57,6 +57,19 @@
 .m_body{
   background-color: #1C2942;
   margin: 0;
+  color: white;
+}
+
+.m_body2{
+  background-color: #151D30;
+  margin: 0;
+  color: white;
+}
+
+.m_body3{
+  background-color: #1C2942;
+  margin: 0;
+  color: white;
 }
 
 .m_head{
@@ -68,10 +81,14 @@
   padding-top: 3%;
 }
 
-.m_titre{
+.m_titre, .m_titre2, .m_titre3{
   font-family: "Zen Dots", sans-serif;
   text-align: center;
   color: white;
+}
+
+.m_titre2{
+  margin: 1em auto;
 }
 
 .m_text{
@@ -106,6 +123,20 @@
   justify-content: space-between;
   justify-content: center;
   gap: 10%;
+  background-color: #1C2942;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.m_register:hover{
+  text-decoration: underline #1C2942;
 }
 
 .m_main{
@@ -117,7 +148,6 @@
   width: 45%;
   height: auto;
   border-radius: 20px;
-  box-shadow: ;
 }
 
 .m_contain{
@@ -133,6 +163,54 @@
   align-items: center;
 
 }
+
+.m_form2{
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.m_form{
+  width: 60vw;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #1C2942;
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+
+label{
+  display: block;
+  margin: 1em auto;
+}
+
+fieldset{
+   padding: 0;
+   margin: 0;
+   border: none;
+   border-bottom: 5px solid #151D30;
+}
+
+.m_textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input{
+  border-radius: 5px;
+  border: none;
+  height: aut;
+}
+
+.m_main2{
+  background-color: #151D30;
+  border-radius: 20px;
+  margin: 10% auto;
+  padding: 1.5em 1em;
+  height: 50%;
+  width: 55%;
+}
+
 /* ---------------------Massine------------------------ */
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
