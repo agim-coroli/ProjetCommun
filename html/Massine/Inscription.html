@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>Inscription</title>
+</head>
+<body class="m_body2">
+    <nav class="m_navbar">
+        <a href="massine.html">Accueil</a>
+        <a>Actualité</a>
+        <a>Forum</a>
+        <div class="m_span"><a href="Connexion.html">se connecter</a><a href="Inscription.html"><span class="m_register">s'inscrire</span></a></div>
+    </nav>
+        <h1 class="m_titre2">FuturDev | Inscription</h1>
+        <form class="m_form">
+            <fieldset>
+                <label for="nom">Nom:<input type="text" placeholder="Nom..." name="nom"></label>
+                <label for="prenom">Prénom: <input type="text" placeholder="Prénom..." name="prenom" required></label>
+                <label for="pseudo">Pseudo: <input type="text" placeholder="Pseudo..." name="pseudo"></label>
+                <label for="Date de naissance">Date de naissance: <input type="date" placeholder="Date de naissance..." name="Date de naissance"></label>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email :<input type="email" placeholder="...@gmail.com" name="Email"></label>
+                <label for="email">Confirmer email :<input type="email" placeholder="...@gmail.com" name="Email"  min="8" max="50" required></label>
+                <label for="password">Mot de passe : <input type="password" placeholder="Password..." name="password"></label>
+                <label for="password">Confirmer mot de passe : <input type="password" placeholder="Password..." name="password" required></label>
+            </fieldset>
+            <fieldset>
+                <label for="referrer">Dans quelle domaine j'exerce / je souhaite exercer?
+                    <select name="referrer" id="referrer" name="referrer">
+                        <option value="">Développement Web / Mobile</option>
+                        <option value="1">Cybersécurité</option>
+                        <option value="2">Game dev</option>
+                        <option value="3">Data analyst / scientist</option>
+                        <option value="4">blockchain</option>
+                        <option value="5">IA</option>
+                        <option value="6">Autre</option>
+                    </select>
+                </label>
+                <label for="textarea" class="m_textarea">
+                    Ajouter des informations:
+                    <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="Ajouter des informations..."></textarea>
+                </label>
+            </fieldset>
+            <label for="termsconditions">Acceptez les termes et conditions <input type="checkbox" name="checkbox" id="termsconditions"></label>
+            <button type="submit" name="submit" checked>Inscription</button>
+    </form>
+</body>
+</html>
