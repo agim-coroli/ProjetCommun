@@ -47,9 +47,204 @@
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Si vous voulez creer des nouvelles classe sans quon ai des conflits, commencer tjrs pas la premiere lettre de votre prenom, par exemple pour Nordine ce sera <div class="N_navbar"></div> "N__" pour nordine "M__" pour miguel, ainsi de suite. */
-/* ---------------------Miguel------------------------ */
+/* ---------------------Massine------------------------ */
 
-/* ---------------------Miguel------------------------ */
+* {
+  overflow: auto !important;
+}
+
+
+.m_body{
+  background-color: #1C2942;
+  margin: 0;
+  color: white;
+}
+
+.m_body2{
+  background-color: #151D30;
+  margin: 0;
+  color: white;
+}
+
+.m_body3{
+  background-color: #1C2942;
+  margin: 0;
+  color: white;
+}
+
+.m_head{
+  background-image: url(html/Massine/images/massine/photo-1451187580459-43490279c0fa.avif);
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 3%;
+}
+
+.m_titre, .m_titre2, .m_titre3{
+  font-family: "Zen Dots", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.m_titre2{
+  margin: 1em auto;
+}
+
+.m_titre3{
+  position: relative;
+  margin: 1em auto;
+}
+
+.m_text{
+  font-family: Zen Dots, sans-serif;
+  width: 80%;
+  padding-left: 10%;
+  color: white;
+
+}
+
+.m_liste, .m_navbar{
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+}
+
+.m_register{
+  background-color: white;
+  color: #1C2942 ;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+.m_span{
+  display: flex;
+  gap: 1em;
+}
+
+.m_navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 10%;
+  background-color: #1C2942;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.m_register:hover{
+  text-decoration: underline #1C2942;
+}
+
+.m_main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.m_hacker, .m_chain, .m_brain{
+  width: 45%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.m_contain{
+  width: 45%;
+  height: auto;
+}
+
+.m_container{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.m_form2{
+  flex: 1;
+  /* width: 50vw; */
+}
+
+
+.m_form{
+  width: 60vw;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #1C2942;
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+
+label{
+  display: block;
+  margin: 1em auto;
+}
+
+fieldset{
+   padding: 0;
+   margin: 0;
+   border: none;
+   border-bottom: 5px solid #151D30;
+}
+
+.m_textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input{
+  border-radius: 5px;
+  border: none;
+  height: aut;
+}
+
+.m_main2{
+  background-color: #1C2942;
+  border-radius: 20px;
+  margin: 10% 10%;
+  height: auto;
+  display: flex;
+}
+
+.m_mastermain{
+  background-color: #151D30;
+
+}
+
+.m_connect{
+  text-align: center;
+  background-color: #fff;
+  color: #1C2942;
+  flex: 1;
+}
+
+.m_google, .m_facebook, .m_X{
+  display: block;
+  color: #1C2942;
+}
+
+#m_submit{
+  display: block;
+  margin-top: 1em;
+}
+
+.m_labels{
+  margin: 1em auto;
+  width: 50%;
+}
+
+
+/* ---------------------Massine------------------------ */
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
