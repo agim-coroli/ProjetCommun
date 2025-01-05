@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  overflow: hidden;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -48,11 +47,6 @@
 
 /* Si vous voulez creer des nouvelles classe sans quon ai des conflits, commencer tjrs pas la premiere lettre de votre prenom, par exemple pour Nordine ce sera <div class="N_navbar"></div> "N__" pour nordine "M__" pour miguel, ainsi de suite. */
 /* ---------------------Massine------------------------ */
-
-* {
-  overflow: auto !important;
-}
-
 
 .m_body{
   background-color: #1C2942;
@@ -1540,7 +1534,7 @@ input{
 /* Page GrandTheftAuto  */
 
 .A__gta__body,
-html {
+.A__html {
   padding: 0;
   margin: 0;
   scroll-snap-type: y mandatory;
