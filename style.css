@@ -91,6 +91,11 @@
   margin: 1em auto;
 }
 
+.m_titre3{
+  position: relative;
+  margin: 1em auto;
+}
+
 .m_text{
   font-family: Zen Dots, sans-serif;
   width: 80%;
@@ -165,9 +170,10 @@ a:hover{
 }
 
 .m_form2{
-  margin: 0 auto;
-  width: 50vw;
+  flex: 1;
+  /* width: 50vw; */
 }
+
 
 .m_form{
   width: 60vw;
@@ -203,13 +209,40 @@ input{
 }
 
 .m_main2{
-  background-color: #151D30;
+  background-color: #1C2942;
   border-radius: 20px;
-  margin: 10% auto;
-  padding: 1.5em 1em;
-  height: 50%;
-  width: 55%;
+  margin: 10% 10%;
+  height: auto;
+  display: flex;
 }
+
+.m_mastermain{
+  background-color: #151D30;
+
+}
+
+.m_connect{
+  text-align: center;
+  background-color: #fff;
+  color: #1C2942;
+  flex: 1;
+}
+
+.m_google, .m_facebook, .m_X{
+  display: block;
+  color: #1C2942;
+}
+
+#m_submit{
+  display: block;
+  margin-top: 1em;
+}
+
+.m_labels{
+  margin: 1em auto;
+  width: 50%;
+}
+
 
 /* ---------------------Massine------------------------ */
 
