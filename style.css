@@ -61,7 +61,7 @@
 }
 
 .m_body3{
-  background-color: #1C2942;
+  background-color: #151D30;
   margin: 0;
   color: white;
 }
@@ -87,7 +87,7 @@
 
 .m_titre3{
   position: relative;
-  margin: 1em auto;
+  margin: 1.5em auto;
 }
 
 .m_text{
@@ -204,8 +204,10 @@ input{
 
 .m_main2{
   background-color: #1C2942;
+  /* position: relative;
+  top: -3em; */
   border-radius: 20px;
-  margin: 10% 10%;
+  margin: auto 10%;
   height: auto;
   display: flex;
 }
@@ -224,7 +226,12 @@ input{
 
 .m_google, .m_facebook, .m_X{
   display: block;
+  margin: 1em auto;
+  padding: 0.5em 0;
   color: #1C2942;
+  width: 80%;
+    border-radius: 20px;
+  background-color: green;
 }
 
 #m_submit{
@@ -233,7 +240,7 @@ input{
 }
 
 .m_labels{
-  margin: 1em auto;
+  margin: 3em auto;
   width: 50%;
 }
 
