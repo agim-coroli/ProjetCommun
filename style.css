@@ -220,6 +220,7 @@ input{
 .m_connect{
   text-align: center;
   background-color: #fff;
+  border-radius: 20px 0 0 20px;
   color: #1C2942;
   flex: 1;
 }
